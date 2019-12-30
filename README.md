@@ -1,6 +1,7 @@
 # Algorithms-And-Complexity
 
 Step-by-Step Installation Guide:
+(Installation Require Internet Connection)
 
 Phase 1# (Gathering the tools)
 
@@ -15,6 +16,22 @@ Phase 1# (Gathering the tools)
 5. Download and install c# Extensions extension by jchannon
 
 6. Download and install NuGet Package Manager by jmrog
+
+Phase 2# (CSharping the tools)
+
+1. Create a new folder where the project will be created
+
+2. Open the folder in Visual Studio Code
+
+3. Open the Terminal or create a new Terminal (Ctrl+Shift+`)
+
+4. Type: "dotnet new console" (no quotes) and press Enter to create a new console C# project
+
+5. Type: "dotnet build" (no quotes) to build the created project
+
+Phase 3# (Code transplant surgery)
+
+1. Copy all the csharp files (.cs) from the script folder and paste to your project's root directory
 
 dotnet add package Google.OrTools --version 7.4.7247
 
