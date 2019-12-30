@@ -33,12 +33,20 @@ Phase 3# (Code transplant surgery)
 
 1. Copy all the csharp files (.cs) from the Scripts folder and paste to your project's root directory. Replace where asked.
 
-2. Copy all the files in the Dependencies folder to @projectname@/bin/Debug/netcoreapp3.1 (or netcoreapp3.0). If you did not build your project on phase 2# step 5 this folder will be absent.
+2. Copy all the files in the Dependencies folder to @projectname@/bin/Debug/netcoreapp#.# . If you did not build your project on phase 2# step 5 this folder will be absent.
 
-3.
+Phase 4# (Cleaning the red stains)
 
-dotnet add package Google.OrTools --version 7.4.7247
+1. To download Google-OrTools Open the terminal and type "dotnet add package Google.OrTools --version 7.4.7247" and press Enter.
 
-https://dotnet.microsoft.com/download/dotnet-core/sdk-for-vs-code?utm_source=vs-code&amp;utm_medium=referral&amp;utm_campaign=sdk-install
+2. Open your project file and add this line between <PropertyGroup> tag: <PlatformTarget>x64</PlatformTarget> to avoid errors regarding OrTools.
+
+3. Open the Command Palette (Crtl+Shift+P) and type "NuGet Package Manager: Add Package". if you did not install nuget package manager on phase 1# step 6 this command will be absent.
+
+4. having completed step 3 successfully type on the searchbar that just opened "Microsoft.Net.Test.Sdk" and download and install the latest version.
+
+5. Repeat step 3 and type "xunit" and download and install the latest version.
+
+6. Repeat step 3 and type "xunit.runner.visualstudio" and download and install the latest version
 
 https://www.youtube.com/watch?v=HQmbAdjuB88
