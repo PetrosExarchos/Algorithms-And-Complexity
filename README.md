@@ -1,5 +1,7 @@
 # Algorithms-And-Complexity
 
+Knapsack 0-1 problem solver.
+
 Step-by-Step Installation Guide:
 (Installation Require Internet Connection)
 
@@ -29,6 +31,8 @@ Phase 2# (CSharping the tools)
 
 5. Type: "dotnet build" (no quotes) to build the created project.
 
+(more information regarding creation of a new c# console project: https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code)
+
 Phase 3# (Code transplant surgery)
 
 1. Copy all the csharp files (.cs) from the Scripts folder and paste to your project's root directory. Replace where asked.
@@ -47,6 +51,20 @@ Phase 4# (Cleaning the red stains)
 
 5. Repeat step 3 and type "xunit" and download and install the latest version.
 
-6. Repeat step 3 and type "xunit.runner.visualstudio" and download and install the latest version
+6. Repeat step 3 and type "xunit.runner.visualstudio" and download and install the latest version.
 
-https://www.youtube.com/watch?v=HQmbAdjuB88
+7. Open the terminal and type "dotnet restore". if every step was completed correctly all the errors will disapear.
+
+8. Build the project by typing "dotnet build" in the terminal.
+
+(more information regarding xunit installation: https://www.youtube.com/watch?v=HQmbAdjuB88)
+
+Phase 5# (Time to fill those knapsacks)
+
+1. Open the terminal and type "dotnet test". if all five tests pass, everything is good to go !
+
+2. Run the application by either typing "dotnet run" on the console or double clicking the .exe file at @projectname@/bin/Debug/netcoreapp#.# .
+
+EXTRA:
+
+
