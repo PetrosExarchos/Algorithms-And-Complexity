@@ -358,10 +358,11 @@ using System.Text.RegularExpressions;
                 Console.WriteLine(files[i].FullName);
                 filenames[i] = files[i].FullName;
             }
-            Console.WriteLine("\n\nFILE GENERATION SUCCESSFULLY COMPLETED !!!\n\n");
+            //Console.WriteLine("\n\nFILE GENERATION SUCCESSFULLY COMPLETED !!!\n\n");
             WaitForInput();
             return filenames;
         }
+
 
     }
 

@@ -57,6 +57,12 @@ public class XUnit_UnitTests
 
     }
 
+    [Fact]
+    public void UnitTest_GeneratorDll()
+    {
+        Assert.True(Program.Generate_KnapsackFiles(0));
+    }
+
     private int Get(int value)
     {
         return value;

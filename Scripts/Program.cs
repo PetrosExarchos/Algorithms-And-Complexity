@@ -69,21 +69,11 @@ using System.Runtime.InteropServices;
 
         static void Initiate_File_Generation_Sequence(InputHandler inptH)
         {
-            try
-            {
-                Console.WriteLine("Type seed Off-set (As Integer) (Default is (0) 'zero')");
-                int offSet = inptH.ManualInputInteger();
-                Console.WriteLine("\n\nGENERATING KNAPSACK FILES !!!\n\n");
-                genKSFiles(0 , GetExecutingDirectoryName()+"/_generatorFiles/");
-            }
-            catch (Exception  ex)
-            {
-                Console.WriteLine(ex);
-                string dummy = ex.Message;
-                Console.WriteLine("GeneratorDll is not loaded or is not functioning correctly !");
-                Console.WriteLine("\n\nDEFAULT PROCEDURE FAILED\n\n");
+            Console.WriteLine("Type seed Off-set (As Integer) (Default is (0) 'zero')");
+            int offSet = inptH.ManualInputInteger();
+            if(!Generate_KnapsackFiles(offSet))
                 return;
-            }
+
             
             string[] flNames = inptH.Get_AllFolderFiles(GetExecutingDirectoryName()+"/_generatorFiles", out bool dirExists);
             if (!dirExists)
@@ -192,6 +182,22 @@ using System.Runtime.InteropServices;
         {
             //var location = new Uri(Assembly.GetEntryAssembly().GetName().CodeBase);
             return Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);//new FileInfo(location.AbsolutePath).Directory.FullName;
+        }
+
+        public static bool Generate_KnapsackFiles(int seed)
+        {
+            try
+            {
+                genKSFiles(0 , GetExecutingDirectoryName()+"/_generatorFiles/");
+                return true;
+            }
+            catch (Exception  ex)
+            {
+                Console.WriteLine(ex);
+                string dummy = ex.Message;
+                Console.WriteLine("GeneratorDll is not loaded or is not functioning correctly !");
+                return false;
+            }
         }
 
     }
