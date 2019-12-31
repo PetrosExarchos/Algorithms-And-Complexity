@@ -27,9 +27,9 @@ Phase 2# (CSharping the tools)
 
 3. Open the Terminal or create a new Terminal (Ctrl+Shift+`).
 
-4. Type: "dotnet new console" (no quotes) and press Enter to create a new console C# project.
+4. Type: "dotnet new console" and press Enter to create a new console C# project.
 
-5. Type: "dotnet build" (no quotes) to build the created project.
+5. Type: "dotnet build" to build the created project.
 
 (more information regarding creation of a new c# console project: https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code)
 
@@ -67,4 +67,8 @@ Phase 5# (Time to fill those knapsacks)
 
 EXTRA:
 
+1. Modifed David Pisinger's Generator in C: The folder contains a modifed version of the original code,
+(found here:http://hjemmesider.diku.dk/~pisinger/generator.c).
+The code was compiled using Dev-Cpp 5.11 as a C-Dll project.
 
+2. Standalone Application:
