@@ -65,10 +65,10 @@ Phase 5# (Time to fill those knapsacks)
 
 2. Run the application by either typing "dotnet run" on the console or double clicking the .exe file at @projectname@/bin/Debug/netcoreapp#.# .
 
-EXTRA:
+EXTRAS:
 
 1. Modifed David Pisinger's Generator in C: The folder contains a modifed version of the original code,
 (found here:http://hjemmesider.diku.dk/~pisinger/generator.c).
 The code was compiled using Dev-Cpp 5.11 as a C-Dll project.
 
-2. Standalone Application:
+2. Standalone Application: (WIP)
