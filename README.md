@@ -2,8 +2,7 @@
 
 Knapsack 0-1 problem solver.
 
-Step-by-Step Installation Guide:
-(Installation Require Internet Connection)
+Step-by-Step Installation Guide: (Installation Require Internet Connection and 64bit system)
 
 Phase 1# (Gathering the tools)
 
